@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+body {
+  text-align: center;
+  padding: 5rem;
+  background: url("assets/img/cat.jpg");
+  background-size: 120%;
+}
+h1,
+p {
+  color: #002129;
+  margin: 1rem auto;
+}
+h1 {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: whitesmoke;
+  box-shadow: 6px 6px 1px 0px #002129;
+}
+h2 {
+  margin-top: revert;
+  font-size: 45px;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 1rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(72, 72, 72);
+  background-image: url("assets/img/snowflake.png");
+  background-size: 8%;
+}
+.circle:active {
+  box-shadow: inset 0 0 40px rgb(72, 72, 72);
+}
+button {
+  padding: 0.8rem 2rem;
+  border: none;
+  background-color: wheat;
+  margin: 1rem;
+  box-shadow: 6px 6px 1px 0px #002129;
+
+}
+.start {
+  background-color: #00F5AF;
+}
+.stop {
+  background-color: #ED313A;
+}
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.active {
+  box-shadow: 0 0 25px rgb(0, 0, 0);
+  background-image: url("assets/img/santa.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gameover_box {
+  background: whitesmoke;
+  padding: 1rem;
+  width: 35%;
+  min-height: 20%;
+  position: relative;
+}
+.end {
+  background: #ED313A;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
